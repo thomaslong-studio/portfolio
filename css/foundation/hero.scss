@@ -1,0 +1,51 @@
+.container {
+    max-width: 100%;
+    margin-top: -90px;
+}
+
+.hero-left {
+    background-color: $base-black;
+    text-align: right;
+}
+
+.heading-hero {
+    padding: 20% 0px 20% 15%;
+}
+
+.heading-hero h1 {
+    font-family: $heading-font;
+    font-size: $heading-one;
+    font-weight: $heading-weight;
+    color: $base-white;
+}
+
+.hero-right {
+    padding-left: 0;
+    padding-top: 24%;
+}
+
+.hero-right img {
+    max-width: 520px;
+}
+
+.showreel-btn {
+    position: absolute;
+    padding-left: 20px;
+    margin-top: -106px;
+}
+
+.hero-right i {
+    font-size: 62px;
+    color: $base-black;
+}
+
+.hero-right i:hover {
+    color: $hover-black;
+}
+
+.hero-right h4 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    font-size: 18px;
+}

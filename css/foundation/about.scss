@@ -1,0 +1,33 @@
+.about {
+    margin: auto;
+}
+
+.about-right {
+    background-color: $base-black;
+    padding: 72px 0 72px 20px;
+}
+
+.about-right h2 {
+    color: $base-white;
+    font-family: $heading-font;
+    font-size: $heading-two;
+    font-weight: $heading-weight;
+}
+
+.about-left {
+    padding: 72px 32px 72px 10%;
+}
+
+.about-left h3 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: $heading-three;
+    font-weight: $heading-weight;
+}
+
+.about-left p {
+    color: $base-black;
+    font-family: $par-font;
+    font-size: $par-size;
+    font-weight: $par-weight;
+}
