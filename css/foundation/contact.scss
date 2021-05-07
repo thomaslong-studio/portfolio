@@ -1,0 +1,78 @@
+.contact {
+    margin: auto;
+    padding: 72px 10% 72px 10%;
+}
+
+.contact h2 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: $heading-two;
+    font-weight: $heading-weight;
+}
+
+.contact-block {
+    text-align: center;
+}
+
+.contact-card {
+    border: 2px solid $base-black;
+    padding: 28px 0px;
+}
+
+.contact-block .text a {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: 18px;
+    font-weight: $heading-weight;
+}
+
+.contact-card i {
+    font-size: 32px;
+    padding-bottom: 6px;
+}
+
+.contact-card:hover {
+    background-color: $base-black;
+    transition: 400ms;
+
+    i {
+        color: $base-white;
+        transition: 400ms;
+    }
+
+    a {
+        color: $base-white;
+        transition: 400ms;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-block {
+        padding: 12px 0px 12px 0px;;
+    }
+}
+
+
+@media only screen and (max-width: 1260px) {
+    .contact h2 {
+        font-size: 92px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+    .contact h2 {
+        font-size: 72px;
+}
+}
+
+@media only screen and (max-width: 645px) {
+    .contact h2 {
+        font-size: 64px;
+}
+}
+
+@media only screen and (max-width: 376px) {
+    .contact h2 {
+        font-size: 48px;
+}
+}

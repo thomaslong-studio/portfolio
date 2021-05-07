@@ -1,0 +1,96 @@
+header .project {
+    margin: auto;
+}
+
+.project .hero-project {
+    padding: 92px 0px 92px 22px;
+}
+
+.project h1 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: $heading-two;
+    font-weight: $heading-weight;
+}
+
+.left-project {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.project-name {
+    padding: 48px 9%;
+}
+
+.hero-project h3 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: $heading-three;
+    font-weight: $heading-weight;
+}
+
+.hero-project p {
+    color: $base-black;
+    font-family: $par-font;
+    font-size: $par-size;
+    font-weight: $par-weight;
+}
+
+.case-study {
+    padding: 72px 10% 32px 10%;
+}
+
+.case-study h3 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: $heading-three;
+    font-weight: $heading-weight;
+}
+
+.case-study p {
+    color: $base-black;
+    font-family: $par-font;
+    font-size: $par-size;
+    font-weight: $par-weight;
+}
+
+.project-cta {
+    padding: 0px 10% 72px 10%;
+}
+
+@media only screen and (max-width: 992px) {
+    .left-project {
+        min-height: 420px;
+    }
+
+    .project .hero-project {
+        padding: 72px 10% 72px 10%;
+    }
+
+    .case-study {
+        padding: 0px 10% 32px 10%;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .project-name h1 {
+        font-size: 130px;
+    }
+}
+
+
+@media only screen and (max-width: 645px) {
+    .project-name h1 {
+        font-size: 72px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .project-name h1 {
+        font-size: 52px;
+    }
+}

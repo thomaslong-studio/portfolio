@@ -14,6 +14,10 @@
     background-color: $base-white;
 }
 
+.work .row {
+    padding: 12px 0px;
+}
+
 .work .box {
     text-align:center;
     background-repeat:no-repeat;
@@ -117,4 +121,37 @@
     50%  {transform: translate(2px, 2px);}
     75%  {transform: translate(2px, -1px);}
     100%  {transform: translate(-2px, 1px);}
+}
+
+@media only screen and (max-width: 767px) {
+    .project-block {
+        padding: 12px 0px;
+    }
+    .work .row {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .work h2 {
+        font-size: 92px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+    .work h2 {
+        font-size: 72px;
+}
+}
+
+@media only screen and (max-width: 645px) {
+    .work h2 {
+        font-size: 64px;
+}
+}
+
+@media only screen and (max-width: 376px) {
+    .work h2 {
+        font-size: 48px;
+}
 }

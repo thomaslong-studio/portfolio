@@ -1,0 +1,39 @@
+.footer {
+    margin: auto;
+    background-color: $base-black;
+    text-align: center;
+}
+
+.footer .row {
+    padding: 72px 0px;
+}
+
+.footer h4 {
+    color: $base-white;
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+.footer i {
+    color: $base-white;
+    font-size: 20px;
+    padding: 0px 8px;
+}
+
+.footer i:hover {
+    color: $hover-white;
+    cursor: pointer;
+}
+
+.footer .copyright {
+    padding: 0;
+}
+
+.copyright p {
+    color: $base-white;
+    font-family: $par-font;
+    font-size: $par-size;
+    font-weight: $par-weight;
+}

@@ -8,6 +8,7 @@
     font-family: $heading-font;
     font-weight: $heading-weight;
     font-size: $navigation-size;
+    position: relative;
 }
 
 .navbar-brand:hover {
@@ -37,7 +38,7 @@ input {
   .open:before {
     content: "";
     background-color: #3c3c3c;
-    width: 24px;
+    width: 26px;
     height: 3px;
     display: block;
     border-radius: 0px;
@@ -50,8 +51,8 @@ input {
   .open:after {
     content: "";
     background-color: #3c3c3c;
-    width: 24px;
-    height: 3.5px;
+    width: 26px;
+    height: 3px;
     display: block;
     border-radius: 0px;
     position: relative;
@@ -190,4 +191,81 @@ input {
   #menuToggle:not(:checked) ~ .menuEffects ul {
     transform: translateY(-30%);
   }
+
+  .navbar-brand-alt {
+    color: $base-black;
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    font-size: $navigation-size;
+    text-decoration: none;
+  }
   
+  .navbar-brand-alt:hover {
+    color: $hover-black;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .open {
+      background-color: $base-white;
+    }
+    .open:after {
+      background-color: $base-white;
+    }
+    .open:before{
+      background-color: $base-white;
+    }
+  }
+
+  /*-- Glitch effect on logo type --*/
+
+  @keyframes noise-anim {
+    $steps: 20;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(100);
+        $bottom: random(101 - $top);
+        $topWithPercent: $top * 1%;
+        $bottomWithPercent: $bottom * 1%;
+        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+      }
+    }
+  }
+
+  .navbar-brand::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 1px;
+    text-shadow: -1px 0 red;
+    top: 1;
+    color: white;
+    background: $base-black;
+    overflow: hidden;
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+
+  @keyframes noise-anim-2 {
+    $steps: 20;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(100);
+        $bottom: random(101 - $top);
+        $topWithPercent: $top * 1%;
+        $bottomWithPercent: $bottom * 1%;
+        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+      }
+    }
+  }
+
+  .navbar-brand::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -1px;
+    text-shadow: 1px 0 blue;
+    top: 1;
+    color: white;
+    background: $base-black;
+    overflow: hidden;
+    animation: noise-anim-2 15s infinite linear alternate-reverse;
+  }
+
+

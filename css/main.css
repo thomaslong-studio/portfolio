@@ -14,6 +14,7 @@
   font-family: "Overpass", sans-serif;
   font-weight: 600;
   font-size: 32px;
+  position: relative;
 }
 
 .navbar-brand:hover {
@@ -43,7 +44,7 @@ input {
 .open:before {
   content: "";
   background-color: #3c3c3c;
-  width: 24px;
+  width: 26px;
   height: 3px;
   display: block;
   border-radius: 0px;
@@ -58,8 +59,8 @@ input {
 .open:after {
   content: "";
   background-color: #3c3c3c;
-  width: 24px;
-  height: 3.5px;
+  width: 26px;
+  height: 3px;
   display: block;
   border-radius: 0px;
   position: relative;
@@ -209,6 +210,402 @@ input {
 #menuToggle:not(:checked) ~ .menuEffects ul {
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
+}
+
+.navbar-brand-alt {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.navbar-brand-alt:hover {
+  color: #272727;
+}
+
+@media only screen and (max-width: 991px) {
+  .open {
+    background-color: #FFFFFF;
+  }
+  .open:after {
+    background-color: #FFFFFF;
+  }
+  .open:before {
+    background-color: #FFFFFF;
+  }
+}
+
+/*-- Glitch effect on logo type --*/
+@-webkit-keyframes noise-anim {
+  0% {
+    -webkit-clip-path: inset(38% 0 52% 0);
+            clip-path: inset(38% 0 52% 0);
+  }
+  5% {
+    -webkit-clip-path: inset(100% 0 1% 0);
+            clip-path: inset(100% 0 1% 0);
+  }
+  10% {
+    -webkit-clip-path: inset(60% 0 30% 0);
+            clip-path: inset(60% 0 30% 0);
+  }
+  15% {
+    -webkit-clip-path: inset(46% 0 10% 0);
+            clip-path: inset(46% 0 10% 0);
+  }
+  20% {
+    -webkit-clip-path: inset(87% 0 14% 0);
+            clip-path: inset(87% 0 14% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(1% 0 58% 0);
+            clip-path: inset(1% 0 58% 0);
+  }
+  30% {
+    -webkit-clip-path: inset(35% 0 46% 0);
+            clip-path: inset(35% 0 46% 0);
+  }
+  35% {
+    -webkit-clip-path: inset(15% 0 62% 0);
+            clip-path: inset(15% 0 62% 0);
+  }
+  40% {
+    -webkit-clip-path: inset(97% 0 3% 0);
+            clip-path: inset(97% 0 3% 0);
+  }
+  45% {
+    -webkit-clip-path: inset(67% 0 11% 0);
+            clip-path: inset(67% 0 11% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(24% 0 69% 0);
+            clip-path: inset(24% 0 69% 0);
+  }
+  55% {
+    -webkit-clip-path: inset(53% 0 4% 0);
+            clip-path: inset(53% 0 4% 0);
+  }
+  60% {
+    -webkit-clip-path: inset(98% 0 2% 0);
+            clip-path: inset(98% 0 2% 0);
+  }
+  65% {
+    -webkit-clip-path: inset(88% 0 6% 0);
+            clip-path: inset(88% 0 6% 0);
+  }
+  70% {
+    -webkit-clip-path: inset(75% 0 7% 0);
+            clip-path: inset(75% 0 7% 0);
+  }
+  75% {
+    -webkit-clip-path: inset(16% 0 63% 0);
+            clip-path: inset(16% 0 63% 0);
+  }
+  80% {
+    -webkit-clip-path: inset(34% 0 49% 0);
+            clip-path: inset(34% 0 49% 0);
+  }
+  85% {
+    -webkit-clip-path: inset(57% 0 42% 0);
+            clip-path: inset(57% 0 42% 0);
+  }
+  90% {
+    -webkit-clip-path: inset(78% 0 19% 0);
+            clip-path: inset(78% 0 19% 0);
+  }
+  95% {
+    -webkit-clip-path: inset(77% 0 8% 0);
+            clip-path: inset(77% 0 8% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(19% 0 61% 0);
+            clip-path: inset(19% 0 61% 0);
+  }
+}
+@keyframes noise-anim {
+  0% {
+    -webkit-clip-path: inset(38% 0 52% 0);
+            clip-path: inset(38% 0 52% 0);
+  }
+  5% {
+    -webkit-clip-path: inset(100% 0 1% 0);
+            clip-path: inset(100% 0 1% 0);
+  }
+  10% {
+    -webkit-clip-path: inset(60% 0 30% 0);
+            clip-path: inset(60% 0 30% 0);
+  }
+  15% {
+    -webkit-clip-path: inset(46% 0 10% 0);
+            clip-path: inset(46% 0 10% 0);
+  }
+  20% {
+    -webkit-clip-path: inset(87% 0 14% 0);
+            clip-path: inset(87% 0 14% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(1% 0 58% 0);
+            clip-path: inset(1% 0 58% 0);
+  }
+  30% {
+    -webkit-clip-path: inset(35% 0 46% 0);
+            clip-path: inset(35% 0 46% 0);
+  }
+  35% {
+    -webkit-clip-path: inset(15% 0 62% 0);
+            clip-path: inset(15% 0 62% 0);
+  }
+  40% {
+    -webkit-clip-path: inset(97% 0 3% 0);
+            clip-path: inset(97% 0 3% 0);
+  }
+  45% {
+    -webkit-clip-path: inset(67% 0 11% 0);
+            clip-path: inset(67% 0 11% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(24% 0 69% 0);
+            clip-path: inset(24% 0 69% 0);
+  }
+  55% {
+    -webkit-clip-path: inset(53% 0 4% 0);
+            clip-path: inset(53% 0 4% 0);
+  }
+  60% {
+    -webkit-clip-path: inset(98% 0 2% 0);
+            clip-path: inset(98% 0 2% 0);
+  }
+  65% {
+    -webkit-clip-path: inset(88% 0 6% 0);
+            clip-path: inset(88% 0 6% 0);
+  }
+  70% {
+    -webkit-clip-path: inset(75% 0 7% 0);
+            clip-path: inset(75% 0 7% 0);
+  }
+  75% {
+    -webkit-clip-path: inset(16% 0 63% 0);
+            clip-path: inset(16% 0 63% 0);
+  }
+  80% {
+    -webkit-clip-path: inset(34% 0 49% 0);
+            clip-path: inset(34% 0 49% 0);
+  }
+  85% {
+    -webkit-clip-path: inset(57% 0 42% 0);
+            clip-path: inset(57% 0 42% 0);
+  }
+  90% {
+    -webkit-clip-path: inset(78% 0 19% 0);
+            clip-path: inset(78% 0 19% 0);
+  }
+  95% {
+    -webkit-clip-path: inset(77% 0 8% 0);
+            clip-path: inset(77% 0 8% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(19% 0 61% 0);
+            clip-path: inset(19% 0 61% 0);
+  }
+}
+
+.navbar-brand::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 1px;
+  text-shadow: -1px 0 red;
+  top: 1;
+  color: white;
+  background: #171717;
+  overflow: hidden;
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    -webkit-clip-path: inset(64% 0 22% 0);
+            clip-path: inset(64% 0 22% 0);
+  }
+  5% {
+    -webkit-clip-path: inset(79% 0 9% 0);
+            clip-path: inset(79% 0 9% 0);
+  }
+  10% {
+    -webkit-clip-path: inset(44% 0 7% 0);
+            clip-path: inset(44% 0 7% 0);
+  }
+  15% {
+    -webkit-clip-path: inset(66% 0 21% 0);
+            clip-path: inset(66% 0 21% 0);
+  }
+  20% {
+    -webkit-clip-path: inset(2% 0 30% 0);
+            clip-path: inset(2% 0 30% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(32% 0 52% 0);
+            clip-path: inset(32% 0 52% 0);
+  }
+  30% {
+    -webkit-clip-path: inset(99% 0 1% 0);
+            clip-path: inset(99% 0 1% 0);
+  }
+  35% {
+    -webkit-clip-path: inset(33% 0 58% 0);
+            clip-path: inset(33% 0 58% 0);
+  }
+  40% {
+    -webkit-clip-path: inset(2% 0 34% 0);
+            clip-path: inset(2% 0 34% 0);
+  }
+  45% {
+    -webkit-clip-path: inset(39% 0 48% 0);
+            clip-path: inset(39% 0 48% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(56% 0 5% 0);
+            clip-path: inset(56% 0 5% 0);
+  }
+  55% {
+    -webkit-clip-path: inset(92% 0 6% 0);
+            clip-path: inset(92% 0 6% 0);
+  }
+  60% {
+    -webkit-clip-path: inset(61% 0 23% 0);
+            clip-path: inset(61% 0 23% 0);
+  }
+  65% {
+    -webkit-clip-path: inset(1% 0 17% 0);
+            clip-path: inset(1% 0 17% 0);
+  }
+  70% {
+    -webkit-clip-path: inset(90% 0 7% 0);
+            clip-path: inset(90% 0 7% 0);
+  }
+  75% {
+    -webkit-clip-path: inset(77% 0 3% 0);
+            clip-path: inset(77% 0 3% 0);
+  }
+  80% {
+    -webkit-clip-path: inset(99% 0 1% 0);
+            clip-path: inset(99% 0 1% 0);
+  }
+  85% {
+    -webkit-clip-path: inset(4% 0 39% 0);
+            clip-path: inset(4% 0 39% 0);
+  }
+  90% {
+    -webkit-clip-path: inset(35% 0 8% 0);
+            clip-path: inset(35% 0 8% 0);
+  }
+  95% {
+    -webkit-clip-path: inset(35% 0 36% 0);
+            clip-path: inset(35% 0 36% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(79% 0 12% 0);
+            clip-path: inset(79% 0 12% 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    -webkit-clip-path: inset(64% 0 22% 0);
+            clip-path: inset(64% 0 22% 0);
+  }
+  5% {
+    -webkit-clip-path: inset(79% 0 9% 0);
+            clip-path: inset(79% 0 9% 0);
+  }
+  10% {
+    -webkit-clip-path: inset(44% 0 7% 0);
+            clip-path: inset(44% 0 7% 0);
+  }
+  15% {
+    -webkit-clip-path: inset(66% 0 21% 0);
+            clip-path: inset(66% 0 21% 0);
+  }
+  20% {
+    -webkit-clip-path: inset(2% 0 30% 0);
+            clip-path: inset(2% 0 30% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(32% 0 52% 0);
+            clip-path: inset(32% 0 52% 0);
+  }
+  30% {
+    -webkit-clip-path: inset(99% 0 1% 0);
+            clip-path: inset(99% 0 1% 0);
+  }
+  35% {
+    -webkit-clip-path: inset(33% 0 58% 0);
+            clip-path: inset(33% 0 58% 0);
+  }
+  40% {
+    -webkit-clip-path: inset(2% 0 34% 0);
+            clip-path: inset(2% 0 34% 0);
+  }
+  45% {
+    -webkit-clip-path: inset(39% 0 48% 0);
+            clip-path: inset(39% 0 48% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(56% 0 5% 0);
+            clip-path: inset(56% 0 5% 0);
+  }
+  55% {
+    -webkit-clip-path: inset(92% 0 6% 0);
+            clip-path: inset(92% 0 6% 0);
+  }
+  60% {
+    -webkit-clip-path: inset(61% 0 23% 0);
+            clip-path: inset(61% 0 23% 0);
+  }
+  65% {
+    -webkit-clip-path: inset(1% 0 17% 0);
+            clip-path: inset(1% 0 17% 0);
+  }
+  70% {
+    -webkit-clip-path: inset(90% 0 7% 0);
+            clip-path: inset(90% 0 7% 0);
+  }
+  75% {
+    -webkit-clip-path: inset(77% 0 3% 0);
+            clip-path: inset(77% 0 3% 0);
+  }
+  80% {
+    -webkit-clip-path: inset(99% 0 1% 0);
+            clip-path: inset(99% 0 1% 0);
+  }
+  85% {
+    -webkit-clip-path: inset(4% 0 39% 0);
+            clip-path: inset(4% 0 39% 0);
+  }
+  90% {
+    -webkit-clip-path: inset(35% 0 8% 0);
+            clip-path: inset(35% 0 8% 0);
+  }
+  95% {
+    -webkit-clip-path: inset(35% 0 36% 0);
+            clip-path: inset(35% 0 36% 0);
+  }
+  100% {
+    -webkit-clip-path: inset(79% 0 12% 0);
+            clip-path: inset(79% 0 12% 0);
+  }
+}
+
+.navbar-brand::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -1px;
+  text-shadow: 1px 0 blue;
+  top: 1;
+  color: white;
+  background: #171717;
+  overflow: hidden;
+  animation: noise-anim-2 15s infinite linear alternate-reverse;
 }
 
 .container {
@@ -419,6 +816,10 @@ input {
   background-color: #FFFFFF;
 }
 
+.work .row {
+  padding: 12px 0px;
+}
+
 .work .box {
   text-align: center;
   background-repeat: no-repeat;
@@ -559,6 +960,254 @@ input {
   100% {
     -webkit-transform: translate(-2px, 1px);
             transform: translate(-2px, 1px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .project-block {
+    padding: 12px 0px;
+  }
+  .work .row {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .work h2 {
+    font-size: 92px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .work h2 {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .work h2 {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .work h2 {
+    font-size: 48px;
+  }
+}
+
+.contact {
+  margin: auto;
+  padding: 72px 10% 72px 10%;
+}
+
+.contact h2 {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.contact-block {
+  text-align: center;
+}
+
+.contact-card {
+  border: 2px solid #171717;
+  padding: 28px 0px;
+}
+
+.contact-block .text a {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-card i {
+  font-size: 32px;
+  padding-bottom: 6px;
+}
+
+.contact-card:hover {
+  background-color: #171717;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.contact-card:hover i {
+  color: #FFFFFF;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.contact-card:hover a {
+  color: #FFFFFF;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-block {
+    padding: 12px 0px 12px 0px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .contact h2 {
+    font-size: 92px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contact h2 {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .contact h2 {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .contact h2 {
+    font-size: 48px;
+  }
+}
+
+.footer {
+  margin: auto;
+  background-color: #171717;
+  text-align: center;
+}
+
+.footer .row {
+  padding: 72px 0px;
+}
+
+.footer h4 {
+  color: #FFFFFF;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.footer i {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 0px 8px;
+}
+
+.footer i:hover {
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+.footer .copyright {
+  padding: 0;
+}
+
+.copyright p {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+header .project {
+  margin: auto;
+}
+
+.project .hero-project {
+  padding: 92px 0px 92px 22px;
+}
+
+.project h1 {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.left-project {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-name {
+  padding: 48px 9%;
+}
+
+.hero-project h3 {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero-project p {
+  color: #171717;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.case-study {
+  padding: 72px 10% 32px 10%;
+}
+
+.case-study h3 {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.case-study p {
+  color: #171717;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.project-cta {
+  padding: 0px 10% 72px 10%;
+}
+
+@media only screen and (max-width: 992px) {
+  .left-project {
+    min-height: 420px;
+  }
+  .project .hero-project {
+    padding: 72px 10% 72px 10%;
+  }
+  .case-study {
+    padding: 0px 10% 32px 10%;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .project-name h1 {
+    font-size: 130px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .project-name h1 {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .project-name h1 {
+    font-size: 52px;
   }
 }
 /*# sourceMappingURL=main.css.map */
