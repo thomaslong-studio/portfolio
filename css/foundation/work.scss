@@ -1,0 +1,120 @@
+.work {
+    margin: auto;
+    padding: 72px 10% 72px 10%;
+}
+
+.work h2 {
+    color: $base-black;
+    font-family: $heading-font;
+    font-size: $heading-two;
+    font-weight: $heading-weight;
+}
+
+.project-block {
+    background-color: $base-white;
+}
+
+.work .box {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:380px;
+    position:relative;
+    overflow:hidden;
+}
+
+.work .project-block .cover {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:$base-black;
+    transition:opacity 0.15s ease-in;
+    opacity:0;
+    padding-top:80px;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.work .project-block:hover .cover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.work-cta {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.work-cta button {
+    padding: 8px 36px;
+}
+
+/*--for glitch button--*/
+.btn-link {
+    position: relative;
+    display: inline-block;
+    color: #281130;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    z-index: 1;
+    
+    &:before,
+    &:after {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:before {
+        background-color: #0ffbf9;
+        z-index: -1;
+    }
+
+    &:after {
+        background-color: #cc0f39;
+        z-index: -2;
+    }
+    
+    &:hover {
+        .link-inner {
+            animation: glitchy 0.3s ease 1;
+        }
+
+        &:before {
+            animation: glitchy 1.3s ease 1.3s;
+        }
+        
+        &:after {
+            animation: glitchy 1.3s ease reverse;
+        }
+    }
+}
+
+.link-inner {
+    display: block;
+    height: 100%;
+    background-color: $base-black;
+    padding: 15px 45px;
+    color: $base-white;
+    font-family: $heading-font;
+    font-size: $btn-size;
+}
+
+.link-inner:hover {
+    color: $hover-white;
+}
+
+@keyframes glitchy {
+    0%   {transform: translate(-1px, 2px);}
+    25%  {transform: translate(-2px, -2px);}
+    50%  {transform: translate(2px, 2px);}
+    75%  {transform: translate(2px, -1px);}
+    100%  {transform: translate(-2px, 1px);}
+}

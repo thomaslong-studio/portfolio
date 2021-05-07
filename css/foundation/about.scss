@@ -31,3 +31,38 @@
     font-size: $par-size;
     font-weight: $par-weight;
 }
+
+.reverse {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+@media only screen and (max-width: 1260px) {
+    .about-right h2 {
+        font-size: 92px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+    .about-right h2 {
+        font-size: 72px;
+}
+}
+
+@media only screen and (max-width: 645px) {
+    .about-right h2 {
+        font-size: 64px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    .about-right{
+        padding: 72px 0 72px 10%;
+    } 
+}
+
+@media only screen and (max-width: 376px) {
+    .about-right h2 {
+        font-size: 48px;
+}
+}

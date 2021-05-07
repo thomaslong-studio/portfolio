@@ -14,6 +14,10 @@
     color: $hover-white;
 }
 
+#menuArea {
+  z-index: 1;
+}
+
 /* menu toggle */
 input {
     display: none;
@@ -47,7 +51,7 @@ input {
     content: "";
     background-color: #3c3c3c;
     width: 24px;
-    height: 3px;
+    height: 3.5px;
     display: block;
     border-radius: 0px;
     position: relative;
@@ -115,6 +119,7 @@ input {
     font-family: $heading-font;
     font-weight: $heading-weight;
     padding: 10px 0;
+    transition: 200ms;
   }
   
   .menu ul li a:hover {
@@ -122,6 +127,8 @@ input {
     -webkit-text-fill-color: $base-black; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: $base-white;
+    font-size: 62px;
+    transition: 400ms;
   }
   
   .menu ul li:hover {
