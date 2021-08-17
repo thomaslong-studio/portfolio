@@ -7,6 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>thomas l. - home</title>
 </head>
 <body>
@@ -14,8 +22,8 @@
     <!-- Masthead -->
     <header>
         <!-- navbar -->
-        <nav class="navbar">
-            <a class="navbar-brand" href="#" data-text="thomas l.">thomas l.</a>
+        <nav class="navbar home">
+            <a class="navbar-brand" href="/" data-text="thomas l.">thomas l.</a>
             <div id="menuArea">
                 <input type="checkbox" id="menuToggle"></input>
               
@@ -27,10 +35,10 @@
                 <label for="menuToggle"></label>
                 <div class="menuContent">
                   <ul>
-                    <li><a href="#">home.</a></li>
-                    <li><a href="#">about.</a></li>
-                    <li><a href="http://127.0.0.1:5500/work.html">work.</a></li>
-                    <li><a href="#">contact.</a></li>
+                    <li><a href="/">home.</a></li>
+                    <li><a href="/index.html#about">about.</a></li>
+                    <li><a href="/work.html">work.</a></li>
+                    <li><a href="/index.html#contact">contact.</a></li>
                   </ul>
                 </div>
               </div>
@@ -48,7 +56,7 @@
                 <div class="col-lg-4 hero-right">
                   <img src="img/headerIMG-portfolio.jpg" alt="">
                   <div class="showreel-btn">
-                    <a href=""><i class="fas fa-play-circle"></i></a>
+                    <a href="https://www.youtube.com/watch?v=y22w0Vv0Dg4&t=7s" target="_blank"><i class="fas fa-play-circle"></i></a>
                     <h4>play 2020 showreel</h4>
                   </div>
                 </div>
@@ -57,17 +65,17 @@
     </header>
 
     <!-- about section -->
-    <div class="container about">
+    <div id="about" class="container about">
         <div class="row flex-row-reverse">
           <div class="col-md-4 about-right">
             <h2>about.</h2>
           </div>
           <div class="col-md-8 about-left">
             <h3>hey, i'm thomas longworth.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>I am a web developer from North western Ontario with design focus and a strong
+              attention to detail. Currently, I have 2 years of industry working experience in
+              seeing projects through from planning to launch. I’m presently seeking
+              professional opportunities inside an agency that I can learn, grow and build with.</p>
           </div>
         </div>
     </div>
@@ -81,31 +89,54 @@
       </div>
       <div class="row">
         <div class="col-lg-4 project-block">
-          <div class="box" style="background-image:url(img/headerIMG-portfolio.jpg)">
+          <div class="box" style="background-image:url(img/projects/serephina-100.jpg)">
+            <a href="/serephina-doula.html">
             <div class="cover">
-              <h3>{project name}</h3>
-              <p><i class="fab fa-wordpress-simple"></i><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i></p>
+              <h3>serephina doula.</h3>
+              <h4>ui design. wordpress dev.</h4>
+              <p>
+                <img class="icon" src="img/icons/adobexd.svg" alt=" adobe xd icon" srcset="">
+                <img class="icon" src="img/icons/wordpress.svg" alt=" wordpress icon" srcset="">
+              </p>  
             </div>
+          </a>
           </div>
         </div>
         <div class="col-lg-4 project-block">
-          <div class="box" style="background-image:url(img/headerIMG-portfolio.jpg)">
+          <div class="box" style="background-image:url(img/projects/rentPanda-100.jpg)">
+            <a href="/rent-panda.html">
             <div class="cover">
-              <h3>{project name}</h3>
+              <h3>rent panda.</h3>
+              <h4>ui design. content creation.</h4>
+              <p>
+                <img class="icon" src="img/icons/adobexd.svg" alt=" adobe xd icon" srcset="">
+                <img class="icon" src="img/icons/figma.svg" alt=" wordpress icon" srcset="">
+                <img class="icon" src="img/icons/adobeillustrator.svg" alt=" wordpress icon" srcset="">
+                <img class="icon" src="img/icons/adobeaftereffects.svg" alt=" wordpress icon" srcset="">
+              </p> 
             </div>
+          </a>
           </div>
         </div>
         <div class="col-lg-4 project-block">
-          <div class="box" style="background-image:url(img/headerIMG-portfolio.jpg)">
+          <div class="box" style="background-image:url(img/projects/thomasL-100.jpg)">
+            <a href="/thomas-longworth.html">
             <div class="cover">
-              <h3>{project name}</h3>
+              <h3>thomas longworth.</h3>
+              <h4>ui design. web dev.</h4>
+              <p>
+                <img class="icon" src="img/icons/adobexd.svg" alt=" adobe xd icon" srcset="">
+                <img class="icon" src="img/icons/html.svg" alt=" wordpress icon" srcset="">
+                <img class="icon" src="img/icons/sass.svg" alt=" wordpress icon" srcset="">
+              </p> 
             </div>
+          </a>
           </div>
         </div>
         </div>
       <div class="row">
         <div class="col-md-12 work-cta">
-          <a href="http://127.0.0.1:5500/work.html" class="btn-link">
+          <a href="/work.html" class="btn-link">
             <span class="link-inner">
               see all works.
             </span>
@@ -115,29 +146,23 @@
     </div>
 
     <!-- contact section -->
-    <div class="container contact">
+    <div id="contact" class="container contact">
       <div class="row">
         <div class="col-md-12">
           <h2>contact.</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 contact-block">
+        <div class="col-lg-6 contact-block">
           <div class="contact-card">
             <div class="icon"><i class="fas fa-envelope"></i></div>
-            <div class="text"><a href="">thomaslong.studio@gmail.com</a></div>
+            <div class="text"><a href="mailto:thomaslong.studio@gmail.com">thomaslong.studio@gmail.com</a></div>
           </div>
         </div>
-        <div class="col-lg-4 contact-block">
+        <div class="col-lg-6 contact-block">
           <div class="contact-card">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <div class="text"><a href="">thomaslong.studio@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="col-lg-4 contact-block">
-          <div class="contact-card">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <div class="text"><a href="">thomaslong.studio@gmail.com</a></div>
+            <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+            <div class="text"><a>ontario, canada.</a></div>
           </div>
         </div>
       </div>
@@ -150,9 +175,9 @@
           <h4>socials.</h4>
         </div>
         <div class="col-12">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-github"></i>
+          <a href="https://www.instagram.com/thomaslong.studio/"><i class="fab fa-instagram"></i></a>
+          <a href="https://ca.linkedin.com/in/thomas-longworth-3b4a4518a"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/thomaslong-studio?tab=repositories"><i class="fab fa-github"></i></a>
         </div>
       </div>
       <div class="row copyright">

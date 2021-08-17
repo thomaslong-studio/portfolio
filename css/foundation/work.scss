@@ -10,8 +10,33 @@
     font-weight: $heading-weight;
 }
 
+.work h3 {
+    color: $base-white;
+    font-family: $heading-font;
+    font-size: 26px;
+    font-weight: $heading-weight;
+}
+
+.work h4 {
+    color: $hover-white;
+    font-family: $heading-font;
+    font-size: 20px;
+    font-weight: $heading-weight;
+    padding: 6px 0px;
+}
+
+.work p {
+    padding-top: 12px;
+}
+
 .project-block {
     background-color: $base-white;
+    transition: 400ms;
+}
+
+.project-block:hover {
+    padding: 0;
+    transition: 400ms;
 }
 
 .work .row {
@@ -37,14 +62,22 @@
     background-color:$base-black;
     transition:opacity 0.15s ease-in;
     opacity:0;
-    padding-top:80px;
+    padding-top:70px;
     color:#fff;
     text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+    transition: 400ms;
+}
+
+.work .project-block .icon {
+    width: 42px;
+    padding: 2px;
 }
 
 .work .project-block:hover .cover {
-    opacity: 0.8;
+    opacity: 0.96;
     cursor: pointer;
+    padding-top:100px;
+    transition: 400ms;
 }
 
 .work-cta {

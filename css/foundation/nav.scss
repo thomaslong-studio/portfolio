@@ -205,13 +205,13 @@ input {
   }
 
   @media only screen and (max-width: 991px) {
-    .open {
+    .home .open {
       background-color: $base-white;
     }
-    .open:after {
+    .home .open:after {
       background-color: $base-white;
     }
-    .open:before{
+    .home .open:before{
       background-color: $base-white;
     }
   }

@@ -40,6 +40,12 @@ header .project {
     font-weight: $par-weight;
 }
 
+.about ol {
+    color: $base-black;
+    font-family: $par-font;
+    font-size: $par-size;
+}
+
 .case-study {
     padding: 72px 10% 32px 10%;
 }
@@ -60,6 +66,10 @@ header .project {
 
 .project-cta {
     padding: 0px 10% 72px 10%;
+}
+
+.btn-link {
+    margin: 12px 2px;
 }
 
 @media only screen and (max-width: 992px) {
