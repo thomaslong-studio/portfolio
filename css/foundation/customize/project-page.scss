@@ -3,7 +3,7 @@ header .project {
 }
 
 .project .hero-project {
-    padding: 92px 0px 92px 22px;
+    padding: 92px 110px 92px 22px;
 }
 
 .project h1 {
@@ -40,7 +40,7 @@ header .project {
     font-weight: $par-weight;
 }
 
-.about ol {
+.about ol, ul {
     color: $base-black;
     font-family: $par-font;
     font-size: $par-size;
